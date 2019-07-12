@@ -1,0 +1,2 @@
+/* pages/news/news.wxss */
+@import "news-item/news-item.wxss";

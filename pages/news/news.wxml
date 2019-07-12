@@ -1,0 +1,9 @@
+<!--pages/news/news.wxml-->
+<import src="news-item/news-item.wxml" />
+  <block wx:for="{{newsData}}" wx:for-item="item" wx:key="{{item.title}}">
+    <!--template-->
+    <!--使用...来展开item对象-->
+    <view catchtap="onTap" data-docid="{{item.docid}}">
+    <template is="news-item" data="{{...item}}"/>
+    </view>
+  </block>

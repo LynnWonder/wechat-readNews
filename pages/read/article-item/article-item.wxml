@@ -1,0 +1,18 @@
+<template name="post-item">
+  <view class="post-container">
+    <view class="post-author-date">
+      <image src="{{avatar}}" class="post-author"></image>
+      <text class="post-date">{{date}}</text>
+    </view>
+    <text class="post-title">{{title}}</text>
+    <image class="post-image" src="{{imgsrc}}"></image>
+    <text class="post-content" catchtap="onTap" data-postid="{{postid}}">{{content}}</text>
+    <view class="post-like">
+      <image wx:if="{{collectionStatus}}" class="post-like-image" src="/img/icon/star.png" bindtap="onLikeTap" data-postid="{{postid}}"></image>
+      <image wx:else class="post-like-image" src="/img/icon/chat.png" bindtap="onLikeTap" data-postid="{{postid}}"></image>
+      <text class="post-like-font">{{collection}}</text>
+      <image class="post-like-image" src="/img/icon/view.png"></image>
+      <text class="post-like-font">{{reading}}</text>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,7 @@
+<template name="news-item">
+  <view class="news-container">
+    <text class="news-title">{{title}}</text>
+    <image class="news-image" src="{{imgsrc}}"></image>
+    <text class="news-content">{{digest}}</text>
+  </view>
+</template>

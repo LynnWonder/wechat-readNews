@@ -1,0 +1,18 @@
+<view class="container">
+  <image class="header-image" src="{{imgsrc}}"></image>
+  <view class="author-data">
+    <text class="author">网易科技</text>
+    <text class="const-text">发表于</text>
+    <text class="date">{{lmodify}}</text>
+  </view>
+  <text class="title">{{title}}</text>
+  <view class="tool">
+    <view class="circle-image">
+      <image wx:if="{{collectionStatus}}" catchtap="onCollectionTap" src="/img/icon/collection.png"></image>
+      <image wx:else catchtap="onCollectionTap" src="/img/icon/collection-anti.png"></image>
+      <image catchtap="onShareTap" class="share-image" src="/img/icon/share.png"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <text class="detail">{{digest}}</text>
+</view>

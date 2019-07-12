@@ -1,0 +1,7 @@
+/* pages/read/read.wxss */
+@import "article-item/article-item.wxss";
+/*需要引入article-item中的样式*/
+swiper,image {
+  width: 100%;
+  height:600rpx;
+}
